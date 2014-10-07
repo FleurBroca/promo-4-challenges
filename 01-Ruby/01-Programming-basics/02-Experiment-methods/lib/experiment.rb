@@ -9,20 +9,20 @@ puts get_rid_of_surrounding_whitespaces(" hey yo ")
 
 def belongs_to?(a_string, a_word)
   a_string.include?(a_word)
-  # example: belongs_to?("hey jude", "jude") => true
 end
 puts belongs_to?("hey jude", "jude")
 
 def replace(initial_string, old_letter, new_letter)
   initial_string.gsub("a","o")
-  # example: replace("casanova", "a", "o") => "cosonovo"
 end
 puts replace("casanova","a","o")
 
 def exactly_divide(an_integer, a_divider)
+  an_integer.to_f/a_divider
   # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
   # example: exactly_divide(13, 4) => 3.25
 end
+puts 13.to_f/4
 
 def divisible_by_two?(an_integer)
   # TODO: return true if an_integer is divisible by 2
