@@ -14,9 +14,10 @@ end
 puts belongs_to?("hey jude", "jude")
 
 def replace(initial_string, old_letter, new_letter)
-  # TODO: return a copy of the string with the new letter replacing the old one
+  initial_string.gsub("a","o")
   # example: replace("casanova", "a", "o") => "cosonovo"
 end
+puts replace("casanova","a","o")
 
 def exactly_divide(an_integer, a_divider)
   # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
