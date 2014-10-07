@@ -3,9 +3,9 @@
 # - Just look in the doc for the right method of the String, Fixnum, and Array classes !
 
 def get_rid_of_surrounding_whitespaces(a_string)
-  # TODO: return a copy of the string with leading and trailing whitespaces removed
-  # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
+  a_string.strip
 end
+puts get_rid_of_surrounding_whitespaces(" hey yo ")
 
 def belongs_to?(a_string, a_word)
   # TODO: return true if a_string contains a_word
