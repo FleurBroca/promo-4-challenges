@@ -36,9 +36,10 @@ def randomize(an_array)
   an_array.shuffle
   # example: randomize([1, 2, 3, 4]) => [2, 1, 4, 3]
 end
-puts randomize([1, 2, 3, 4])
+# puts randomize([1, 2, 3, 4])
 
 def ascending_order(an_array)
-  # TODO: return a copy of an_array with elements in ascending order
+  an_array.sort
   # example: ascending_order([7, 3, 1, 6, 9]) => [1, 3, 6, 7, 9]
 end
+# puts ascending_order([7, 3, 1, 6, 9])
