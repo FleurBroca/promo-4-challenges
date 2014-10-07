@@ -5,4 +5,10 @@ require 'date'
 
 def age_in_days(day, month, year)
   # TODO: return the age expressed in days given the day, month, and year of birth
+  endDate = Date.today
+  beginDate = Date.new(year, month, day)
+  days = endDate - beginDate
+  days.class
+  days.to_i
 end
+puts age_in_days(25, 5, 1973)
