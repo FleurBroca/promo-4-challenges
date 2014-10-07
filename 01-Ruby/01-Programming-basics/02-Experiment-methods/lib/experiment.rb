@@ -28,9 +28,9 @@ end
 # puts 6 % 2 == 0
 
 def random_subset(an_array, sample_size)
-  # TODO: return a random subset of an_array with size sample_size
-  # example: random_subset(('a'..'z').to_a, 4) => ["u", "q", "l", "t"]
+  an_array.sample(sample_size)
 end
+# puts random_subset(('a'..'z').to_a, 4)
 
 def randomize(an_array)
   # TODO: return a randomized copy of an_array
