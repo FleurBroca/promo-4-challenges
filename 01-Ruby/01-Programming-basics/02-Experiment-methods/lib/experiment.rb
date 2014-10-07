@@ -8,9 +8,10 @@ end
 puts get_rid_of_surrounding_whitespaces(" hey yo ")
 
 def belongs_to?(a_string, a_word)
-  # TODO: return true if a_string contains a_word
+  a_string.include?(a_word)
   # example: belongs_to?("hey jude", "jude") => true
 end
+puts belongs_to?("hey jude", "jude")
 
 def replace(initial_string, old_letter, new_letter)
   # TODO: return a copy of the string with the new letter replacing the old one
