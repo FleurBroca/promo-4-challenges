@@ -5,29 +5,27 @@
 def get_rid_of_surrounding_whitespaces(a_string)
   a_string.strip
 end
-puts get_rid_of_surrounding_whitespaces(" hey yo ")
+# puts get_rid_of_surrounding_whitespaces(" hey yo ")
 
 def belongs_to?(a_string, a_word)
   a_string.include?(a_word)
 end
-puts belongs_to?("hey jude", "jude")
+# puts belongs_to?("hey jude", "jude")
 
 def replace(initial_string, old_letter, new_letter)
-  initial_string.gsub("a","o")
+  initial_string.gsub("a", "o")
 end
-puts replace("casanova","a","o")
+# puts replace("casanova", "a", "o")
 
 def exactly_divide(an_integer, a_divider)
-  an_integer.to_f/a_divider
-  # TODO: return divison of an_integer by a_divider (computing the floating division, NOT the euclidean one)
-  # example: exactly_divide(13, 4) => 3.25
+  an_integer.to_f / a_divider
 end
-puts 13.to_f/4
+# puts 13.to_f / 4
 
 def divisible_by_two?(an_integer)
-  # TODO: return true if an_integer is divisible by 2
-  # example: divisible_by_two?(6) => true
+  an_integer % 2 == 0
 end
+# puts 6 % 2 == 0
 
 def random_subset(an_array, sample_size)
   # TODO: return a random subset of an_array with size sample_size
