@@ -33,9 +33,10 @@ end
 # puts random_subset(('a'..'z').to_a, 4)
 
 def randomize(an_array)
-  # TODO: return a randomized copy of an_array
+  an_array.shuffle
   # example: randomize([1, 2, 3, 4]) => [2, 1, 4, 3]
 end
+puts randomize([1, 2, 3, 4])
 
 def ascending_order(an_array)
   # TODO: return a copy of an_array with elements in ascending order
