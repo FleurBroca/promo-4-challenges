@@ -61,4 +61,13 @@ puts product([11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 def sorted_pairs(array)
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
   #       You should make use of Enumerable#each_slice
+  # (1..10).each_slice(3) { |a| p a }
+  # (1..10).sort { |a, b| b <=> a }
+  sorted_array = []
+  array.each_slice(2) do | slice |
+    a = slice.sort
+    sorted_array << a
+  end
+  sorted_array
 end
+puts sorted_pairs(["fleur", "pomme", "arabesque", "dix", "carotte", "pain"])
