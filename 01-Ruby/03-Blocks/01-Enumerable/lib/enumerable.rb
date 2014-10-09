@@ -34,7 +34,11 @@ puts short_words(["fleur", "pomme", "arabesque", "dix"], 4)
 def first_under(array, limit)
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
+  array.find do | number |
+    number < limit
+  end
 end
+puts first_under([11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 4)
 
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
