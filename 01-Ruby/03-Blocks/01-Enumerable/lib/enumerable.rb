@@ -43,12 +43,20 @@ puts first_under([11, 12, 13, 14, 15, 16, 17, 18, 19, 20], 4)
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
+  array.map do | word |
+    "#{word}!"
+  end
 end
+puts add_bang(["fleur", "pomme", "arabesque", "dix"])
 
 def product(array)
   # TODO: Calculate the product of an array of numbers.
   #       You should use of Enumerable#reduce
+  array.reduce do |product, number|
+    product * number
+  end
 end
+puts product([11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
 def sorted_pairs(array)
   # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
