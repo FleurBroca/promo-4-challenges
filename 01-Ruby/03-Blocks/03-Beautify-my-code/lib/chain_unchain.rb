@@ -9,6 +9,7 @@ def shuffle_word(a_word)
   shuffle_array
 
 end
+print shuffle_word("arabesque")
 
 
 def quote_prime_numbers(n)
