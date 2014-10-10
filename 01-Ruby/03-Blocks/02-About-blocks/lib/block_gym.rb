@@ -12,9 +12,9 @@ def tag(tag_name, attr = nil)
   return "<#{tag_name}>#{content}</#{tag_name}>"
 end
 
-# test1 = tag("h1") { "Some Title" }
-# print test1
-# "sep"
+test1 = tag("h1") { "Some Title" }
+print test1
+"sep"
 test2 = tag("h1", ["id", "title"]) do
   "Some Title"
 end
