@@ -31,7 +31,6 @@ class OrangeTree
   end
 
   def produce_fruits
-
     if @age < 5
       @fruits = 0
     elsif @age > 5 && @age <= 10
@@ -46,5 +45,4 @@ class OrangeTree
   def pick_a_fruit!
     @fruits -= 1
   end
-
 end
