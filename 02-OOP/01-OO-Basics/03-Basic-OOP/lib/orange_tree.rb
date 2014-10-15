@@ -18,7 +18,6 @@ class OrangeTree
 
   def height_growth
     @height += 1 if @age <= 10
-    end
   end
 
   def dead?
@@ -32,6 +31,7 @@ class OrangeTree
   end
 
   def produce_fruits
+
     if @age < 5
       @fruits = 0
     elsif @age > 5 && @age <= 10
@@ -46,3 +46,5 @@ class OrangeTree
   def pick_a_fruit!
     @fruits -= 1
   end
+
+end
