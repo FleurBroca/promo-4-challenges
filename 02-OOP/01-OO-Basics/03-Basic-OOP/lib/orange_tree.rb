@@ -23,9 +23,10 @@ class OrangeTree
   def dead?
     if @age >= 100
       @death = true
-    elsif @age >= 50 && @age < 100
+    elsif @age > 50
       @death = [true, false].sample
     else
+      @age
     end
     return @death
   end
@@ -33,9 +34,9 @@ class OrangeTree
   def produce_fruits
     if @age < 5
       @fruits = 0
-    elsif @age >= 5 && @age < 10
+    elsif @age > 5 && @age <= 10
       @fruits = 100
-    elsif @age >= 10 && @age < 15
+    elsif @age > 10 && @age <= 15
       @fruits = 200
     else
       @fruits = 0
