@@ -2,6 +2,7 @@
 require 'csv'
 
 def most_successfull(number, max_year, file_name)
+<<<<<<< HEAD
 
 
 movies = []
@@ -19,6 +20,9 @@ movies.each do |movie|
   if movie[:year] < max_year
     movies_date << movie
   end
+=======
+  # TODO: return the number most successfull movies max_year
+>>>>>>> 9d61b15d3c063513d54186c21faed5dfb4611be0
 end
 movies_date = movies_date.sort_by { | movie| - movie[:earnings] }
 movies_date.take(number)
