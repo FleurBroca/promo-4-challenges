@@ -1,5 +1,4 @@
 class Dessert
-
   attr_reader :name, :calories
 
   def initialize(name, calories)
@@ -17,7 +16,6 @@ class Dessert
 end
 
 class JellyBean < Dessert
-
   attr_reader :flavor
 
   def initialize(name, calories, flavor)
@@ -28,5 +26,4 @@ class JellyBean < Dessert
   def delicious?
     @flavor == "black licorice" ? false : true
   end
-
 end
