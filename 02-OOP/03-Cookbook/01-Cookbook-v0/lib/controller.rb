@@ -1,21 +1,25 @@
-require_relative "recipe"
-require_relative "display"
-
 class Controller
+  attr_reader :cookbook, :display
+
   def initialize(cookbook)
     @cookbook = cookbook
     @display = Display.new
   end
 
   def list
-    @display.print_recipes(@cookbook.recipes)
+    recipes = @cookbook.recipes
+    @display.display_all_recipes(recipes)
   end
 
   def create
-    recipe = @display.ask_user_for_new_recipe
+    name = @display.ask_user_for_name
+    description = @display.ask_user_for_description
+    recipe = Recipe.new(name, description)
     @cookbook.add_recipe(recipe)
   end
 
-  def destroy(name)
+  def destroy
+    id_recipe = @display.destroy_recipe
+    @cookbook.remove_recipe(id_recipe)
   end
 end

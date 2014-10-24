@@ -1,18 +1,26 @@
 class Display
-  def ask_user_for_new_recipe
-    puts "New recipe: What's the name of your recipe?"
-    name_recipe = gets.chomp
-    puts "New recipe: What's the description of your recipe?"
-    description_recipe = gets.chomp
-    return recipe = Recipe.new(name_recipe, description_recipe)
-  end
-
-  def print_recipes(recipes)
-    print "Here is the list of recipes :"
-    recipes.each do |row|
-      puts "row[0] : row[1]"
+  def display_all_recipes(recipes)
+    puts "Here is the list of all the recipes:"
+    recipes.each do |recipe|
+      puts "#{recipe.name} : #{recipe.description}"
     end
   end
+
+  def ask_user_for_name
+    puts "What is the name of your recipe?"
+    gets.chomp
+  end
+
+  def ask_user_for_description
+    puts "What is the description of your recipe?"
+    gets.chomp
+  end
+
+  def destroy_recipe
+    puts "What recipe do you want to erase?"
+    gets.chomp.to_i
+  end
+
 
   def display_tasks
     puts ""

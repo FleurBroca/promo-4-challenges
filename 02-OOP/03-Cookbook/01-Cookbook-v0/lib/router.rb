@@ -1,16 +1,15 @@
-require_relative 'controller'
-
 class Router
   def initialize(controller)
     @controller = controller
     @running = true
+    @display = controller.display
   end
 
   def run
     puts "Welcome to the Cookbook!"
     puts "           --           "
     while @running
-      display_tasks
+      @display.display_tasks
       action = gets.chomp.to_i
       print `clear`
       route_action(action)
