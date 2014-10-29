@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h2>Contact us</h2>
+  <h2 class="centered-text">Contact us</h2>
 
   <nav>
       <ul>
@@ -15,17 +15,19 @@
         <li><a href="contact.html" target="_blank">Contact</a></li>
       </ul>
   </nav>
-
-  <form action="/users/sign_in">
-  <label for="user_email"></label>
-  <p class="fuschia-text">Subscribe to our newsletter</p>
-  <input type="submit" value="Subscribe">
-  <input type="text" name="email" id="user_email" placeholder="mary.pickford@gmail.com">
-  <input type="password" name="password" placeholder="enter your password">
-  </form>
-
-  <p class="fuschia-text">Enter your questions</p>
-  <textarea name="bio" rows="3"></textarea>
+  <div class="form">
+    <form action="/users/sign_in">
+    <label for="user_email"></label>
+    <p class="fuschia-text">Subscribe to our newsletter</p>
+    <input type="submit" value="Subscribe">
+    <input type="text" name="email" id="user_email" placeholder="mary.pickford@gmail.com">
+    <input type="password" name="password" placeholder="enter your password">
+    </form>
+    <br>
+    <br>
+    <p class="fuschia-text">Enter your questions</p>
+    <textarea name="bio" rows="3"></textarea>
+  </div>
 
 </body>
 </html>

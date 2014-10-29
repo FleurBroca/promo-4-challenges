@@ -2,6 +2,11 @@ body{
   font-family: courier;
 }
 
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
 h1{
   font-size: 60px;
   font-weight: bold;
@@ -13,7 +18,7 @@ h2{
 
 header{
   border: 5px solid black;
-  padding: 20px;
+  padding: 30px;
   margin: 10px;
   text-align: center;
 }
@@ -21,26 +26,32 @@ header{
 footer{
   color: #E80C7A;
   text-decoration: none;
-  clear: both;
-  border-top: 1px solid lightgrey;
+  border-top: 3px solid lightgrey;
+  display: inline;
 }
 
 a{
   background-color: black;
   color: white;
+  text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
+  background-color: #E80C7A;
 }
 
-nav{
-
+nav {
+  display: inline;
 }
 
 .article{
   text-align: center;
 
+}
+
+.form{
+  margin: 50px;
 }
 
 .article p {
@@ -49,4 +60,13 @@ nav{
 
 .fuschia-text{
   color: #E80C7A;
+}
+
+.centered-text{
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
 }
