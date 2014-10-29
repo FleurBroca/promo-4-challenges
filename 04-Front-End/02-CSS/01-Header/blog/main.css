@@ -1,5 +1,29 @@
+body{
+  font-weight: 300;
+}
+
 .container {
   margin: 0 auto;
   width: 720px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+header ul li{
+  list-style: none;
+  display: inline;
+  text-decoration: none;
+  padding-right: 50px;
+
+}
+
+header a{
+  width:100px;
+}
+
+header ul {
+  text-align: center;
 }
