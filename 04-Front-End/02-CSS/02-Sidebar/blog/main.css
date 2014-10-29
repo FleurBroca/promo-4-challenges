@@ -1,5 +1,44 @@
+body,
+html {
+margin:0;
+padding:0;
+color:#000;
+}
+
 .container {
   margin: 0 auto;
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul{
+  padding: 0;
+}
+
+
+.content{
+  float: right;
+  width: 620px;
+  border-left: 1px solid grey;
+  padding-right: 10px;
+  padding-left: 40px;
+}
+
+nav{
+  float:left;
+  width: 120px;
+  padding-top: 20px;
+
+}
+
+footer{
+  clear: both;
+}
+
+header{
+  border-bottom: 1px solid grey;
 }
