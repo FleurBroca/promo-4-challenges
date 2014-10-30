@@ -3,3 +3,21 @@
   width: 840px;
 	font-family: 'Open Sans', sans-serif;
 }
+
+nav{
+  display: inline;
+}
+
+h1{
+  display: inline;
+}
+
+.nav-content{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+nav a{
+  color: #ffffff;
+  text-decoration: none;
+}
