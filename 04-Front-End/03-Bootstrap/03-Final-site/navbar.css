@@ -1,0 +1,51 @@
+img.logo {
+
+  margin-left: 25%;
+  margin-top: 10px;
+}
+
+
+.navbar-black{
+  background: black;
+  border: none;
+}
+
+.navbar-black .navbar-nav > li > a
+{
+  color: white;
+  line-height: 25px;
+}
+
+.navbar-black .navbar-nav > li > a:hover
+{
+  color: #C89D63;
+}
+
+.navbar-brand .fa-home::before{
+  color: white;
+}
+
+.dropdown-menu a {
+  background: black;
+  color: white;
+}
+
+.dropdown-toggle a {
+  background: black;
+  color: white;
+}
+.navbar-nav > .dropdown > .dropdown-menu,
+.navbar-nav > .dropdown > .dropdown-menu >  li > a,
+.navbar-nav > .dropdown > .dropdown-menu > li > a:hover,
+.navbar-nav > .dropdown > .dropdown-menu > li > a:focus{
+
+  background: black;
+  color: white;
+}
+
+.navbar-black .navbar-nav > .open > a,
+.navbar-black .navbar-nav > .open > a:hover,
+.navbar-black .navbar-nav > .open > a:focus{
+  background: transparent;
+  color: white;
+}

@@ -1,0 +1,8 @@
+.vertical-spacer {
+  height: 4em;
+}
+
+.banner{
+  background-image: url('images/yonialter.jpg');
+  height: 500px;
+}
