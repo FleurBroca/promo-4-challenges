@@ -1,0 +1,42 @@
+body{
+  background-color: #F0ECDF;
+}
+
+tr{
+  margin-top: 20px;
+
+}
+
+.racer_table{
+  margin-top: 100px;
+}
+
+.racer_table td {
+  background-color: #F0ECDF;
+  height: 52px;
+  width: 100px;
+}
+
+#player1_race td.active {
+  background-image: url("../img/player_1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #F0ECDF;
+}
+
+#player2_race td.active {
+  background-image: url("../img/player_2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #F0ECDF;
+}
+
+#player1_race{
+  border-bottom: dotted #ff0000;
+}
+
+#player2_race{
+  border-bottom: dotted #FFAC00;
+  margin-top: 40px;
+
+}

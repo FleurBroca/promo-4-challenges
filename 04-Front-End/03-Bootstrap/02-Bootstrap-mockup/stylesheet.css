@@ -1,0 +1,21 @@
+.banner{
+  background: url("ice_cream_scoop.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px
+}
+
+.banner h1{
+  color: #3cdeff;
+  font-size: 90px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.banner p{
+  background: rgba(0, 0, 0, .4);
+  color: white;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 2px;
+}

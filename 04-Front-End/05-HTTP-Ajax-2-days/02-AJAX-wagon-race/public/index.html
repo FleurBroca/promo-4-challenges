@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>JAJAX Wagon Race</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>-WAGON RACE-</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
 
-  <body>
-    <script src="/js/game.js"></script>
+  <body class="text-center">
+
+     <div id="game-box">
+      <h1>WAGON RACE</h1>
+      <div class="player-1">
+        <p>Player 1 has won</p>
+        <a href='/' class='btn btn-danger'>Restart</a>
+      </div>
+      <div class="player-2">
+        <p>Player 2 has won</p>
+        <a href='/' class='btn btn-danger'>Restart</a>
+      </div>
+
+      <div id="newSession">
+        <button id="startANewGame">Start a new game</button>
+          <div class="form-players-name">
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label for="name">Player 1</label>
+                <input type="name" class="form-control" id="name_player1" placeholder="Please enter your name">
+                <input type="submit" value="Submit" class="btn btn-primary">
+                <label for="name">Player 2</label>
+                <input type="name" class="form-control" id="name_player2" placeholder="Please enter your name">
+                <input type="submit" value="Submit" class="btn btn-primary">
+              </div>
+            </form>
+          </div>
+      </div>
+
+      <div id="runGame"></div>
+    </div>
+
+
+    <table id="race-table">
+      <tbody>
+        <tr id="track-1">
+          <td class="here"></td>
+        </tr>
+        <tr id="track-2">
+          <td class="here"></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/game.js"></script>
   </body>
 </html>
+
